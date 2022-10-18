@@ -36,10 +36,7 @@
 	background-position: -100%;
 	animation: background 10s infinite alternate;
 	text-decoration: none;
-	& span{
-		font-size: 4.5rem;
-		font-weight: bold;
-	}
+	cursor: pointer;
 
 }
 
@@ -63,6 +60,7 @@
 }
 
 .item{
+	cursor: pointer;
 	& a{
 		text-decoration: none;
 		color: var(--fc-main);
@@ -80,3 +78,6 @@
 	color: var(--fc-links);
 }
 
+.active a{
+	color: var(--fc-links);
+}
