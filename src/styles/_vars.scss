@@ -1,0 +1,27 @@
+$borderRadius: 10px;
+
+:root.light{
+	--bg-block: rgb(220, 220, 220);
+	--bg-body: #fff;
+	--fc-main: #17171a;
+	--scroll-track: #C8C8C8;
+	--bg-theme: linear-gradient(90deg, rgba(216,170,170,1) 0%, rgba(107,85,255,1) 100%);
+	--bg-afterSource: linear-gradient(90deg, rgba(23,23,26,0.0005) 0%, rgba(23,23,26,0.5) 50%, rgba(23,23,26,0.0005) 100%);
+	--fc-links: rgba(107,85,255,1);
+	--swiper-theme-color: rgba(107,85,255,1);
+	--fc-logo: linear-gradient(90deg, rgba(242,158,32,1), rgba(175,75,94,1), rgba(0,211,255,1), rgba(175,0,190,1));
+	--fc-addon: rgb(220, 220, 220);
+}
+
+:root.dark{
+	--bg-block: #252528;
+	--bg-body: #17171a;
+	--fc-main: rgb(220, 220, 220);
+	--scroll-track: #252528;
+	--bg-theme: linear-gradient(90deg, rgba(216,170,170,1) 0%, rgba(107,85,255,1) 100%);
+	--bg-afterSource: linear-gradient(90deg, rgba(255,255,255,0.002) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.002) 100%);
+	--fc-links: rgba(216,170,170,1);
+	--swiper-theme-color: rgba(216,170,170,1);
+	--fc-logo: linear-gradient(90deg, rgba(255,196,108,1), rgba(216,170,170,1), rgba(109,230,255,1), rgba(242,90,255,1));
+	--fc-addon: #17171a;
+}

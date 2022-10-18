@@ -1,0 +1,38 @@
+@import 'vars';
+@import 'fonts';
+@import 'scroll';
+
+html{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	color: var(--fc-main);
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: var(--bg-body);
+	-moz-osx-font-smoothing: grayscale;
+	transition: background-color 0.5s;
+}
+
+html, body {
+	height: 100%;
+}
+
+.active-link{
+	color: var(--fc-links);
+}
+
+#wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100%;
+	& > div{
+		flex: 1 1 auto;
+	}
+}

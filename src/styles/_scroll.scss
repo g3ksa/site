@@ -1,0 +1,21 @@
+@import 'vars';
+
+html{
+	transition: background-color 0.5s
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	transition: all 0.5s
+}
+
+::-webkit-scrollbar-track {
+	background: var(--bg-body);
+	transition: background 0.5s
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: var(--scroll-track);
+	transition: background 0.5s
+}

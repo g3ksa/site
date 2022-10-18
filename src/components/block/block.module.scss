@@ -1,0 +1,37 @@
+.block{
+	padding-bottom: 75px;
+	border-radius: 10px;
+	padding: 2rem;
+	position: relative;
+
+	&:first-child{
+		margin-top: 105px;
+	}
+
+	&:not(:first-child){
+		margin-top: 20px;
+	}
+
+	&[underline=true]::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 50%;
+		height: 1px;
+		background-color: var(--fc-main);
+		transition: .5s;
+	}
+	&[underline-position=center]::after{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&[underline-position=left]::after{
+		width: 100%;
+		opacity: .5;
+	}
+
+	&[underline-position=left]::after{
+		right: 0;
+	}
+}

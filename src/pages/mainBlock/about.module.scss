@@ -1,0 +1,12 @@
+.content{
+	display: flex;
+	justify-content: space-between;
+	//align-items: center;
+	//flex-wrap: wrap;
+	flex: 1 0 50%;
+}
+
+.text{
+	font-size: 1.3rem;
+	text-align: left;
+}

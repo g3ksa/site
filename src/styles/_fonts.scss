@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url(../fonts/Montserrat/Montserrat-Regular.eot);
+	src: local('Montserrat'), local('Montserrat'),
+		url('../fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+		url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+		url('../fonts/Montserrat/Montserrat-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(../fonts/Montserrat/Montserrat-Bold.eot);
+	src: local('Montserrat'), local('Montserrat'),
+		url('../fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+		url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+		url('../fonts/Montserrat/Montserrat-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gropled';
+	src: url('../fonts/Gropled/Gropled-Bold.eot');
+	src: local('Gropled-Bold'), local('Gropled-Bold'),
+		url('../fonts/Gropled/Gropled-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gropled/Gropled-Bold.woff') format('woff'),
+		url('../fonts/Gropled/Gropled-Bold.woff2') format('woff2'),
+		url('../fonts/Gropled/Gropled-Bold.ttf') format('truetype'),
+		url('../fonts/Gropled/Gropled-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
