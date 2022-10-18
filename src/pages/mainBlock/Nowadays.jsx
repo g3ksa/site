@@ -8,8 +8,8 @@ import { Element } from 'react-scroll'
 
 export const Nowadays = () => {
 	return (
-		<Element name='nowadays'>
-			<Block>
+		<Block>
+			<Element name='nowadays'>
 				<Title text='NBA в настоящее время' />
 				<div className={styles.content}>
 					<div className={styles.text}>
@@ -22,7 +22,7 @@ export const Nowadays = () => {
 					</div>
 					<img src={Salaries} alt='' className={styles.img} />
 				</div>
-			</Block>
-		</Element>
+			</Element>
+		</Block>
 	)
 }

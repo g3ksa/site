@@ -8,13 +8,15 @@ import { Teams } from './Teams'
 
 function MainBlock() {
 	return (
-		<Container>
+		<>
 			<About />
-			<History />
-			<Teams />
-			<Rules />
-			<Nowadays />
-		</Container>
+			<Container>
+				<History />
+				<Teams />
+				<Rules />
+				<Nowadays />
+			</Container>
+		</>
 	)
 }
 export { MainBlock }

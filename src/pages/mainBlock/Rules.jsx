@@ -7,8 +7,8 @@ import styles from './rules.module.scss'
 
 export const Rules = () => {
 	return (
-		<Element name='rules'>
-			<Block underline={{ isUnderline: 'true', position: 'left' }}>
+		<Block underline={{ isUnderline: 'true', position: 'left' }}>
+			<Element name='rules'>
 				<Title text='Регламент NBA' />
 				<div className={styles.content}>
 					<div className={styles.text}>
@@ -55,7 +55,7 @@ export const Rules = () => {
 						</li>
 					</ul>
 				</div>
-			</Block>
-		</Element>
+			</Element>
+		</Block>
 	)
 }

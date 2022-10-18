@@ -8,8 +8,8 @@ import { Element } from 'react-scroll'
 
 export const Teams = () => {
 	return (
-		<Element name='teams'>
-			<Block underline={{ isUnderline: 'true', position: 'left' }}>
+		<Block underline={{ isUnderline: 'true', position: 'left' }}>
+			<Element name='teams'>
 				<Title text='Команды NBA' textAlign='left' />
 				<div className={styles.content}>
 					<div className={styles.text}>
@@ -25,7 +25,7 @@ export const Teams = () => {
 					</div>
 					<img src={teamExample} alt='' className={styles.img} />
 				</div>
-			</Block>
-		</Element>
+			</Element>
+		</Block>
 	)
 }

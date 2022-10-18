@@ -9,8 +9,8 @@ import { Element } from 'react-scroll'
 
 export const History = () => {
 	return (
-		<Element name='history'>
-			<Block underline={{ isUnderline: 'true', position: 'left' }}>
+		<Block underline={{ isUnderline: 'true', position: 'left' }}>
+			<Element name='history'>
 				<Title text={'История'} textAlign='left' />
 				<div className={styles.content}>
 					<div className={styles.text}>
@@ -38,7 +38,7 @@ export const History = () => {
 					>{`Когда две лиги слились в 1949 году, общее количество команд достигло 16-ти, а название было преобразовано в Национальную баскетбольную ассоциацию. Тем не менее, в 1950-х годах количество команд сократилось вместе с поддержкой болельщиков, и к сезону 1954-55 годов их осталось только восемь.`}</div>
 					<img src={historyImg} alt='' className={styles.img} />
 				</div>
-			</Block>
-		</Element>
+			</Element>
+		</Block>
 	)
 }

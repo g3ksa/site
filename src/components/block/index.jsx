@@ -2,6 +2,7 @@ import React, { forwardRef } from 'react'
 import { motion } from 'framer-motion'
 
 import styles from './block.module.scss'
+import classNames from 'classnames'
 
 export const Block = forwardRef(
 	(
@@ -9,6 +10,7 @@ export const Block = forwardRef(
 			children,
 			ref,
 			underline = { isUnderline: 'false', position: undefined },
+			className,
 		},
 		...props
 	) => {
@@ -16,7 +18,7 @@ export const Block = forwardRef(
 		console.log(underline.isUnderline)
 		return (
 			<div
-				className={styles.block}
+				className={classNames(styles.block, className)}
 				underline={underline.isUnderline}
 				underline-position={underline?.position}
 				//underlinePosition={underlinePosition}

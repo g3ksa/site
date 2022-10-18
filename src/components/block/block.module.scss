@@ -4,10 +4,6 @@
 	padding: 2rem;
 	position: relative;
 
-	&:first-child{
-		margin-top: 105px;
-	}
-
 	&:not(:first-child){
 		margin-top: 20px;
 	}
