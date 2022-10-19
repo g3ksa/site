@@ -27,17 +27,10 @@
 .logo{
 	font-family: 'Gropled', sans-serif;
 	font-size: 3rem;
-	background: var(--fc-logo);
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-  	color: #fff;
+  	color: var(--fc-main);
 	font-weight: 700;
-	background-size: 300%;
-	background-position: -100%;
-	animation: background 10s infinite alternate;
 	text-decoration: none;
 	cursor: pointer;
-
 }
 
 @keyframes background {

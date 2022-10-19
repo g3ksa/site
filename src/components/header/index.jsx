@@ -67,6 +67,12 @@ const Header = () => {
 								Настоящее время
 							</Link>
 						</div>
+						<div className={styles.item}>
+							<a className={styles.link} href='#' target='blank'>
+								Играть
+							</a>
+						</div>
+
 						<ChangeTheme />
 					</div>
 				</div>
