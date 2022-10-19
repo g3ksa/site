@@ -1,13 +1,21 @@
 import React from 'react'
 import { Element } from 'react-scroll'
-import { Block } from '../../components/block/'
+
+import { MotionBlock } from '../../components/block/'
 import { Title } from '../../components/title'
+import blockAnimation from './blockAnimation'
 
 import styles from './rules.module.scss'
 
 export const Rules = () => {
 	return (
-		<Block underline={{ isUnderline: 'true', position: 'left' }}>
+		<MotionBlock
+			underline={{ isUnderline: 'true', position: 'left' }}
+			initial='hidden'
+			whileInView='visible'
+			viewport={{ amount: 0.2, once: true }}
+			variants={blockAnimation}
+		>
 			<Element name='rules'>
 				<Title text='Регламент NBA' />
 				<div className={styles.content}>
@@ -56,6 +64,6 @@ export const Rules = () => {
 					</ul>
 				</div>
 			</Element>
-		</Block>
+		</MotionBlock>
 	)
 }

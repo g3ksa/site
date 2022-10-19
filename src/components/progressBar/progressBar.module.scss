@@ -1,0 +1,19 @@
+.container{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.progressBar {
+	height: 10px;
+	background: rgba(216,170,170,1);
+	transform-origin: 0%;
+	position: relative;
+}
+
+.ballImg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateY(-100%);
+}

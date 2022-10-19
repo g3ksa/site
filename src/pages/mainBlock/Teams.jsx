@@ -1,14 +1,22 @@
 import React from 'react'
-import { Block } from '../../components/block'
+import { Element } from 'react-scroll'
+
+import { MotionBlock } from '../../components/block'
 import { Title } from './../../components/title/index'
+import teamExample from '../../img/nba-history-5.jpg'
+import blockAnimation from './blockAnimation'
 
 import styles from './teams.module.scss'
-import teamExample from '../../img/nba-history-5.jpg'
-import { Element } from 'react-scroll'
 
 export const Teams = () => {
 	return (
-		<Block underline={{ isUnderline: 'true', position: 'left' }}>
+		<MotionBlock
+			underline={{ isUnderline: 'true', position: 'left' }}
+			initial='hidden'
+			whileInView='visible'
+			viewport={{ amount: 0.2, once: true }}
+			variants={blockAnimation}
+		>
 			<Element name='teams'>
 				<Title text='Команды NBA' textAlign='left' />
 				<div className={styles.content}>
@@ -26,6 +34,6 @@ export const Teams = () => {
 					<img src={teamExample} alt='' className={styles.img} />
 				</div>
 			</Element>
-		</Block>
+		</MotionBlock>
 	)
 }

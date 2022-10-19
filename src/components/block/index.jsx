@@ -8,20 +8,17 @@ export const Block = forwardRef(
 	(
 		{
 			children,
-			ref,
 			underline = { isUnderline: 'false', position: undefined },
 			className,
 		},
+		ref,
 		...props
 	) => {
-		//const { children } = props
-		console.log(underline.isUnderline)
 		return (
 			<div
 				className={classNames(styles.block, className)}
 				underline={underline.isUnderline}
 				underline-position={underline?.position}
-				//underlinePosition={underlinePosition}
 				ref={ref}
 				{...props}
 			>
@@ -30,5 +27,14 @@ export const Block = forwardRef(
 		)
 	}
 )
+
+// export const Block = forwardRef((props, ref) => {
+// 	const { children } = props
+// 	return (
+// 		<div className={styles.block} ref={ref} {...props}>
+// 			{children}
+// 		</div>
+// 	)
+// })
 
 export const MotionBlock = motion(Block)

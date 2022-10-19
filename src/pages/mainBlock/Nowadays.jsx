@@ -1,14 +1,22 @@
 import React from 'react'
+import { Element } from 'react-scroll'
+
 import { Title } from '../../components/title'
-import { Block } from '../../components/block'
+import { MotionBlock } from '../../components/block'
+import Salaries from '../../img/NBA salaries.png'
+import blockAnimation from './blockAnimation'
+import { CarryAddon } from './CarryAddon'
 
 import styles from './nowadays.module.scss'
-import Salaries from '../../img/NBA salaries.png'
-import { Element } from 'react-scroll'
 
 export const Nowadays = () => {
 	return (
-		<Block>
+		<MotionBlock
+			initial='hidden'
+			whileInView='visible'
+			viewport={{ amount: 0.2, once: true }}
+			variants={blockAnimation}
+		>
 			<Element name='nowadays'>
 				<Title text='NBA в настоящее время' />
 				<div className={styles.content}>
@@ -23,6 +31,7 @@ export const Nowadays = () => {
 					<img src={Salaries} alt='' className={styles.img} />
 				</div>
 			</Element>
-		</Block>
+			<CarryAddon />
+		</MotionBlock>
 	)
 }

@@ -3,6 +3,8 @@
 	border-radius: 10px;
 	padding: 2rem;
 	position: relative;
+	background-color: var(--bg-body);
+	transition: background-color .5s;
 
 	&:not(:first-child){
 		margin-top: 20px;
