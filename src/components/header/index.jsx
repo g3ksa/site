@@ -73,7 +73,7 @@ const Header = () => {
 								href='https://quest-book.ru/online/mitril/publication/test/13080/7cbd309e61917bab9fef3a89e1194bcb/'
 								target='blank'
 							>
-								Играть
+								Тест
 							</a>
 						</div>
 
