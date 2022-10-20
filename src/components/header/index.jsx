@@ -68,7 +68,11 @@ const Header = () => {
 							</Link>
 						</div>
 						<div className={styles.item}>
-							<a className={styles.link} href='#' target='blank'>
+							<a
+								className={styles.link}
+								href='https://quest-book.ru/online/mitril/publication/test/13080/7cbd309e61917bab9fef3a89e1194bcb/'
+								target='blank'
+							>
 								Играть
 							</a>
 						</div>
